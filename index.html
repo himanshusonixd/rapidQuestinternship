@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RapidQuest</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet" />
+
+
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="navbar-top">
+        <div style="height: 30px; width: 30px; opacity: 1">
+          <img src="images/pngwing.com.png" alt="" />
+        </div>
+
+        <span class="material-symbols-outlined">search</span>
+      </div>
+
+      <div class="navbar-mid">
+        <div class="navbar-special">
+          <span class="material-symbols-outlined">home</span>
+        </div>
+        <span class="material-symbols-outlined">apps</span>
+        <span class="material-symbols-outlined">dialogs</span>
+        <span class="material-symbols-outlined">person</span>
+      </div>
+
+      <div class="navbar-bottom">
+        <span class="material-symbols-outlined">notifications</span>
+        <span class="material-symbols-outlined">logout</span>
+      </div>
+    </div>
+    <div class="aboutsection">
+      <div class="aboutsection-first">
+        <div class="aboutsection-userImg">
+          <img src="images/user.png" alt="" />
+        </div>
+        <div class="aboutsection-info">
+          <h2>Hi User,</h2>
+          <p>Welcome back</p>
+        </div>
+      </div>
+      <div class="aboutsection-balance">
+        <h3>Today</h3>
+        <div>
+          <h2>$19,892</h2>
+          <p>Account Balance</p>
+        </div>
+        <div>
+          <h4>$4,000</h4>
+          <p>Year to date contributions</p>
+        </div>
+        <div>
+          <h4>$1,892</h4>
+          <p>Total interest</p>
+        </div>
+        <button>I want to</button>
+
+        <h3>Recent Transactions</h3>
+        <p>2020-08-07</p>
+        <h4>Withdrawal transfer to Bank-XXX11</h4>
+        <hr />
+        <p>2020-07-21</p>
+        <h4>Withdrawal transfer to Bank-XXX11</h4>
+        <hr />
+        <p>2020-07-16</p>
+        <h4>Withdrawal transfer to Bank-XXX11</h4>
+        <hr />
+      </div>
+    </div>
+
+    <div class="graphsection">
+      <div>
+        <h5 id="special">Retirement Income</h5>
+        <h4>Starting year 2056</h4>
+      </div>
+
+      <div class="moneydiv">
+        <div>
+          <h3>$300,000</h3>
+          <p>My goal</p>
+        </div>
+        <div>
+          <h3>59%</h3>
+          <p>Goal achieved</p>
+        </div>
+        <div>
+          <h3>$300</h3>
+          <p>Est. Monthly income</p>
+        </div>
+      </div>
+
+      <div class="graphdiv">
+        <h4 id="special">Contributions Overtime</h4>
+        <div class="chart-div">
+          <div id="chart"></div>
+        </div>
+      </div>
+      <div class="graph-lastsection">
+        <h4 id="special">How do i compare to my peers?</h4>
+        <p>These numbers represent current goal achievement</p>
+
+        <div class="circleandbtn">
+          <div class="optionsBtn">
+            <div>
+              <span>Age</span>
+              <select name="Age" class="selectBtn" id="Age">
+                <option value="volvo">Under 30</option>
+                <option value="saab">Under 40</option>
+                <option value="opel">Under 50</option>
+              </select>
+            </div>
+
+            <hr>
+            <div>
+              <span>Salary:</span>
+              <select name="Salary" class="selectBtn" id="Salary">
+                <option value="volvo">K 20 - K 30 </option>
+                <option value="saab">K 40 - K 50 </option>
+                <option value="opel">K 60 - K 70 </option>
+              </select>
+            </div>
+
+
+            <hr>
+            <div>
+              <span>Gender:</span>
+              <select name="Gender" class="selectBtn">
+                <option value="volvo">Male</option>
+                <option value="saab">Female</option>
+              </select>
+            </div>
+
+
+            <hr>
+          </div>
+          <div class="circlepercentBtn">
+            <div>
+              <img src="images/79.png" alt="">
+              <span>Average</span>
+            </div>
+            <div>
+              <img src="images/95.png" alt="">
+              <span>Top</span>
+            </div>
+            <div>
+              <img src="images/58.png" alt="">
+              <span>Me</span>
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <div class="lastsection">
+      <h4>Retirement Strategy</h4>
+
+        <div class="lastsection-firstdiv">
+          <div class="contribution">
+            <span>Employee contribution</span>
+            <div class="range-div">
+              <input type="range" id="Employee" name="Employee" min="0" max="11" />
+              <span>12%</span>
+            </div>
+          </div>
+          <div class="contribution">
+            <span>Retirement Age</span>
+            <div class="range-div">
+              <input type="range" id="Employee" name="Employee" min="0" max="11" />
+              <span>65</span>
+            </div>
+          </div>
+
+          <hr>
+        </div>
+      
+
+        <div class="lastsection-seconddiv">
+          <div style="display: flex; flex-direction: row; gap: 20px;">
+            <p>Employer Contribution</p>
+            <p>8.4%</p>
+          </div>
+          <div style="display: flex; flex-direction: row; gap: 94px;">
+            <p>Interest Rate</p>
+            <p>5%</p>
+          </div>
+        </div>
+        <div class="lastsection-btndiv">
+          <button>Update</button>
+          <p style="font-size:13px ;" id="special">View Help Docs ></p>
+        </div>
+        
+        <div class="lastsection-footer">
+          <p>Are you considering a</p>
+          <h5>Housing Advance ?</h5>
+          <span>Limited time reduce interest.</span>
+          <p id="special">Learn more ></p>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="responsive-navbar">
+      <div class="navbar-mid-responsive" >
+        <div class="navbar-special">
+          <span class="material-symbols-outlined">home</span>
+        </div>
+        <span class="material-symbols-outlined">apps</span>
+        <span class="material-symbols-outlined">dialogs</span>
+        <span class="material-symbols-outlined">person</span>
+        <span class="material-symbols-outlined">search</span>
+      </div>
+
+     
+    <script src="script.js"></script>
+</body>
+
+</html>
